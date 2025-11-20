@@ -11,15 +11,16 @@ public class Cours implements ICours {
     private boolean necessiteProjecteur;
 
     
-   public Cours(CoursBuilder builder) {
-        this.matiere = builder.matiere;
-        this.enseignant = builder.enseignant;
-        this.salle = builder.salle;
-        this.date = builder.date;
-        this.heureDebut = builder.heureDebut;
-        this.estOptionnel = builder.estOptionnel;
-        this.niveau = builder.niveau;
-        this.necessiteProjecteur=builder.necessiteProjecteur;
+    public Cours(String matiere, String enseignant, String salle, String date, 
+                 String heureDebut, boolean estOptionnel, String niveau, boolean necessiteProjecteur) {
+        this.matiere = matiere;
+        this.enseignant = enseignant;
+        this.salle = salle;
+        this.date = date;
+        this.heureDebut = heureDebut;
+        this.estOptionnel = estOptionnel;
+        this.niveau = niveau;
+        this.necessiteProjecteur = necessiteProjecteur;
     }
 
     @Override
