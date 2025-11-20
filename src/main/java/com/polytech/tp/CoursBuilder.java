@@ -33,7 +33,7 @@ String niveau;
         return this;
     }
 
-    public CoursBuilder setOptionnel(boolean estOptionnel) {
+    public CoursBuilder setEstOptionnel(boolean estOptionnel) {
         this.estOptionnel = estOptionnel;
         return this;
     }
